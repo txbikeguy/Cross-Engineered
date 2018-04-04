@@ -8,7 +8,7 @@
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
       if (target.length) {
         $('html, body').animate({
-          scrollTop: (target.offset().top - 57)
+          scrollTop: (target.offset().top - 47)
         }, 1000, "easeInOutExpo");
         return false;
       }
@@ -57,19 +57,19 @@
   }, 300);
 
   // Magnific popup calls
-  $('.popup-gallery').magnificPopup({
-    delegate: 'a',
-    type: 'image',
-    tLoading: 'Loading image #%curr%...',
-    mainClass: 'mfp-img-mobile',
-    gallery: {
-      enabled: true,
-      navigateByImgClick: true,
-      preload: [0, 1]
-    },
-    image: {
-      tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
-    }
-  });
+  // $('.popup-gallery').magnificPopup({
+  //   delegate: 'a',
+  //   type: 'image',
+  //   tLoading: 'Loading image #%curr%...',
+  //   mainClass: 'mfp-img-mobile',
+  //   gallery: {
+  //     enabled: false,
+  //     navigateByImgClick: true,
+  //     preload: [0, 1]
+  //   },
+  //   image: {
+  //     tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
+  //   }
+  // });
 
 })(jQuery); // End of use strict
